@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DE55BA9-2997-4823-A05D-7E6590C4CD53}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TicTacToe</RootNamespace>
+    <AssemblyName>TicTacToe</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Tic_Tac_Toe_Game_32px_1125930_easyicon.net.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ai.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game1pEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game1pEasy.Designer.cs">
+      <DependentUpon>Game1pEasy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game1pHard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game1pHard.Designer.cs">
+      <DependentUpon>Game1pHard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game1pNormal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game1pNormal.Designer.cs">
+      <DependentUpon>Game1pNormal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game2p.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game2p.Designer.cs">
+      <DependentUpon>Game2p.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mode.Designer.cs">
+      <DependentUpon>Mode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Starting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Starting.Designer.cs">
+      <DependentUpon>Starting.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game1pEasy.resx">
+      <DependentUpon>Game1pEasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game1pHard.resx">
+      <DependentUpon>Game1pHard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game1pNormal.resx">
+      <DependentUpon>Game1pNormal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game2p.resx">
+      <DependentUpon>Game2p.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mode.resx">
+      <DependentUpon>Mode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Starting.resx">
+      <DependentUpon>Starting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\You-lose-sound-effect.wav" />
+    <None Include="bin\Debug\Xsound.wav" />
+    <None Include="bin\Debug\win.wav" />
+    <None Include="bin\Debug\Osound.wav" />
+    <None Include="bin\Debug\MenuClick.wav" />
+    <None Include="bin\Debug\Exit.wav" />
+    <None Include="bin\Debug\draw.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Tic_Tac_Toe_Game_32px_1125930_easyicon.net.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\if_Close_2001866.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\if_Orkut_1063057.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_tic_tac_toe_game-wallpaper-800x600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_wood_background_whr_web_hig1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_26_3049255 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_26_3049255 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Close_2001866.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Orkut_1063057.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Previous_2_372909.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Rewind_2001873.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Tic-Tac-Toe-Game-red_190320.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joystick-1530192696786-8564.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading-game-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_1rsz_tictactoe-photo-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_joystick-1530192696786-8564.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_rsz_1rsz_tictactoe-photo-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_tictactoe-photo-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_video-game-controller-wallpaper-high-definition-for-widescreen-wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsz_zwaiz5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tic_Tac_Toe_Game_32px_1125930_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tic-Tac-Toe-Game.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tic-Tac-Toe-Game128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tic-Tac-Toe-Game-grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TicTacToe-photo-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video-game-controller-wallpaper-high-definition-For-Widescreen-Wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zWaiZ5.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
