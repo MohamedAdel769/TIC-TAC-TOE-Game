@@ -11,4 +11,4 @@ https://youtu.be/s__LFQB9XKo
 # Screen Shots
 ![alt text](https://github.com/MohamedAdel769/TIC-TAC-TOE-Game/blob/master/Screenshots/TicTacToeGame.PNG?raw=true)
 ![alt text](https://github.com/MohamedAdel769/TIC-TAC-TOE-Game/blob/master/Screenshots/PlayVsComputer.PNG?raw=true)
-![alt text](https://github.com/MohamedAdel769/TIC-TAC-TOE-Game/blob/master/Screenshots/TicTacToeGame.PNG?raw=true)
+![alt text](https://github.com/MohamedAdel769/TIC-TAC-TOE-Game/blob/master/Screenshots/Gameplay.PNG?raw=true)
