@@ -8,7 +8,7 @@ https://youtu.be/s__LFQB9XKo
 # Best Summer Project
 ![alt text](https://github.com/MohamedAdel769/TIC-TAC-TOE-Game/blob/master/Screenshots/best%20tic%20tac.jpg?raw=true)
 
-#Screen Shots
+# Screen Shots
 ![alt text](https://github.com/MohamedAdel769/TIC-TAC-TOE-Game/blob/master/Screenshots/TicTacToeGame.PNG?raw=true)
 ![alt text](https://github.com/MohamedAdel769/TIC-TAC-TOE-Game/blob/master/Screenshots/PlayVsComputer.PNG?raw=true)
 ![alt text](https://github.com/MohamedAdel769/TIC-TAC-TOE-Game/blob/master/Screenshots/TicTacToeGame.PNG?raw=true)
